@@ -1,0 +1,55 @@
+//napply plugin: 'com.android.application'
+//https://medium.freecodecamp.org/how-modularisation-affects-build-time-of-an-android-application-43a984ce9968
+//http://www.theappguruz.com/blog/library-project-module-as-dependency-in-android-studio
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    //buildToolsVersion "21.1.2"
+    flavorDimensions "default"
+
+    defaultConfig {
+        applicationId "com.emdeveloper.embcfinder"
+        minSdkVersion 21
+        targetSdkVersion 21
+        versionCode 46
+        versionName "1.8.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        xtestConfig {
+            minSdkVersion 21
+            targetSdkVersion 21
+            versionCode 46
+            versionName '1.8.10T'
+            applicationId 'com.emdeveloper.embcfinder'
+        }
+        releaseConfig {
+            minSdkVersion 21
+            applicationId 'com.emdeveloper.embcfinder'
+            targetSdkVersion 21
+            versionCode 46
+            versionName '1.8.1'
+        }
+        nohardware {
+            minSdkVersion 21
+            applicationId 'com.emdeveloper.embcfinder'
+            targetSdkVersion 21
+            versionCode 46
+            versionName '1.8.1nh'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(path: ':embeaconlib')
+    //debugCompile project(path: ':embeaconlib', configuration: 'debug')
+    //releaseCompile project(path: ':embeaconlib', configuration: 'release')
+}

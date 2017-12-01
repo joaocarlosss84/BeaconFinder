@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.emdeveloper.embeaconlib" >
+
+  <!-- Need to access Bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION ACCESS_FINE_LOCATION" />
+    -->
+
+    <!-- Need to access storage for the database -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        />
+
+    <application  android:label="@string/app_name" >
+        <!-- <provider android:name=".EMSQL$EMContentProvider" -->
+        <!--           android:authorities="com.emdeveloper.embeaconlib" -->
+        <!--           android:enabled="true" -->
+        <!--           android:exported="true" > -->
+        <!-- </provider> -->
+    </application>
+
+</manifest>

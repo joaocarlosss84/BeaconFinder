@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <FrameLayout android:id="@+id/beacon_list_frame"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="3">
+  <fragment
+      android:id="@+id/beacon_list"
+      android:name="com.emdeveloper.embcfinder.BeaconListFragment"
+      android:layout_width="match_parent"
+      tools:context=".BeaconListActivity"
+      android:layout_height="match_parent"
+      tools:layout="@layout/activity_beacon_list_item" />
+  </FrameLayout>
+  <Switch
+      android:id="@+id/sw_log"
+      android:layout_width="fill_parent"
+      android:layout_height="54dp"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:text="@string/logging"
+      />
+</LinearLayout>

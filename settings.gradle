@@ -1,0 +1,3 @@
+include ':app', ':embeaconlib'
+project(':embeaconlib').projectDir = new File('../EMBluetooth/embeaconlib')
+

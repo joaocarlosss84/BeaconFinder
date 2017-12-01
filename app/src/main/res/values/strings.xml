@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">EMBC Finder</string>
+    <string name="title_beacon_detail">Beacon Detail</string>
+    <string name="title_activity_info">Information</string>
+
+    <!-- Menu Items -->
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_info">info</string>
+    <string name="ble_not_supported">Bluetooth Low Energy not supported</string>
+<!--    <string name="embeaconlibContentProvider">com.emdeveloper.embcfinder.embeaconlib.ContentProvider</string> -->
+
+<string name="embeaconlibContentProvider">com.emdeveloper.embeaconlib.xxxxx</string>
+    <string name="info_emdev">emdeveloper</string>
+    <string name="info_em">EM Microelectronic</string>
+    <string name="info_grd">Glacier River Design</string>
+    <string name="info_terms">EM Terms of Use</string>
+  	 <string name="url_emdev_web">http://www.emdeveloper.com/</string>
+	 <string name="url_emmicro_web">http://www.emmicroelectronic.com/</string>
+	 <string name="url_grd_web">http://glacierriver.com/</string>
+	 <string name="url_terms_web">"http://www.emdeveloper.com/?page_id=367"</string>
+    <string name="version">"Version: %1$s (%2$d)"</string>
+    <string name="nullversion">"Version: "</string>    
+    <string name="logging">Logging</string>
+
+    <!-- Names for beacons -->
+    <string name="blank">""</string>    
+    <string name="embc_name">"EMB"</string>
+    <string name="ibeacon_name">"ID"</string>
+    <string name="altbeacon_name">"ALT"</string>
+    <string name="eddystone_url">"E-URL"</string>
+    <string name="eddystone_uid">"E-UID"</string>
+    <string name="eddystone_tlm">"E-TLM"</string>
+
+</resources>

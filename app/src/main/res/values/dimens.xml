@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_info_horizontal_margin">16dp</dimen>
+    <dimen name="activity_info_vertical_margin">16dp</dimen>
+    <dimen name="activity_info_top_pad">4dp</dimen>
+    <dimen name="activity_info_bottom_pad">4dp</dimen>    
+    <dimen name="activity_info_left_pad">8dp</dimen>
+    <dimen name="activity_info_right_pad">8dp</dimen>
+    <dimen name="activity_info_icon_height">80dp</dimen>
+    <dimen name="beacon_list_icon_height">60dp</dimen>
+    <dimen name="res_42dp">42dp</dimen>
+    <dimen name="res_48dp">48dp</dimen>
+    <dimen name="res_80dp">80dp</dimen>
+
+
+    <bool name="isTablet">false</bool>
+</resources>

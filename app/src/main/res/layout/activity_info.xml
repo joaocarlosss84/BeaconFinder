@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/embeacon_bg_teal"
+    android:baselineAligned="false"
+    >
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:measureWithLargestChild="true"
+    android:baselineAligned="false"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/ll_emdev"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_info_top_pad"
+        android:layout_marginBottom="@dimen/activity_info_bottom_pad"        
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_info_icon_height"
+            android:gravity="center_vertical"
+            android:src="@drawable/logo_em_dev" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/info_emdev"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginLeft="@dimen/activity_info_left_pad" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_em"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_info_top_pad"
+        android:layout_marginBottom="@dimen/activity_info_bottom_pad"        
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_info_icon_height"
+            android:gravity="center_vertical"
+            android:src="@drawable/logo_em_micro" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/info_em"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginLeft="@dimen/activity_info_left_pad"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_grd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_info_top_pad"
+        android:layout_marginBottom="@dimen/activity_info_bottom_pad"        
+        >
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="@dimen/activity_info_icon_height"
+            android:gravity="center_vertical"
+            android:src="@drawable/logo_grd" />
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/ll_emterms"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_info_top_pad"
+        android:layout_marginBottom="@dimen/activity_info_bottom_pad"        
+            >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/activity_info_icon_height"
+            android:gravity="center_vertical"
+            android:src="@drawable/logo_em_dev" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/info_terms"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginLeft="@dimen/activity_info_left_pad" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/versionname"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_info_icon_height"
+        android:gravity="center_horizontal"
+        android:text="@string/nullversion"
+        android:layout_marginTop="@dimen/activity_info_top_pad"
+        android:layout_marginBottom="@dimen/activity_info_bottom_pad"        
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         />
+  </LinearLayout>
+</FrameLayout>

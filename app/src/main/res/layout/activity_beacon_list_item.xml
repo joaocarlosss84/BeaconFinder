@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_beacon_list_item"
+                android:weightSum="1"
+                android:showDividers="beginning|middle|end"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+  <ImageView
+      android:id="@+id/beaconIcon"
+      android:layout_width="wrap_content"
+      android:layout_height="60dp"
+      android:layout_alignParentTop="false"
+      android:layout_alignParentStart="true"
+      android:src="@drawable/beaconunk"
+      android:layout_marginTop="5dp" />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_toEndOf="@+id/beaconIcon"
+      android:layout_toRightOf="@+id/beaconIcon"
+      android:id="@+id/linearLayout"
+      android:layout_alignParentTop="true">
+    <ImageView
+        android:id="@+id/beaconRssiIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rssi_zero"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/beaconRssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="-100"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp" />
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="00:00:00:00:00:00"
+      android:id="@+id/beaconAddress"
+      android:visibility="visible"
+      android:textStyle="normal"
+      android:layout_alignParentStart="false"
+      android:layout_toRightOf="@+id/MACText"
+      android:layout_marginTop="-2dp"
+      android:layout_below="@+id/beaconSerialNumber" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="18446744073709551616"
+      android:id="@+id/beaconTime"
+      android:layout_below="@+id/beaconAddress"
+      android:layout_alignParentStart="true"
+      android:visibility="gone"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="E-UID"
+      android:id="@+id/beaconType"
+      android:layout_alignBottom="@+id/beaconIcon"
+      android:layout_alignParentStart="false"
+      android:layout_alignLeft="@+id/beaconIcon"
+      android:layout_alignRight="@+id/beaconIcon"
+      android:textAlignment="gravity"
+      android:gravity="center_horizontal"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:textStyle="bold"
+      android:layout_alignParentBottom="false" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="SerialNumber"
+      android:singleLine="true"
+      android:includeFontPadding="false"
+      android:id="@+id/beaconSerialNumber"
+      android:layout_below="@+id/linearLayout"
+      android:layout_marginTop="-2dp"
+      android:layout_toRightOf="@+id/SNText" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="EMBeacon12345"
+      android:id="@+id/beaconName"
+      android:layout_alignParentBottom="false"
+      android:layout_toEndOf="@id/beaconIcon"
+      android:layout_alignParentStart="false"
+      android:visibility="visible"
+      android:singleLine="true"
+      android:includeFontPadding="false"
+      android:textStyle="normal"
+      android:layout_toRightOf="@+id/beaconIcon"
+      android:layout_below="@+id/beaconAddress"
+      android:layout_marginTop="-2dp" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:id="@+id/majorminorlinearLayout"
+      android:layout_alignStart="@id/linearLayout"
+      android:layout_below="@+id/beaconAddress"
+      android:layout_marginTop="-2dp"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="majorid"
+        android:singleLine="true"
+        android:id="@+id/beaconMajorId"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:singleLine="true"
+        android:id="@+id/slash"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="minorid"
+        android:singleLine="true"
+        android:id="@+id/beaconMinorId"
+        />
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:singleLine="true"
+      android:includeFontPadding="false"
+      android:layout_height="wrap_content"
+      android:text="Eddystone"
+      android:id="@+id/beaconEddy"
+      android:layout_below="@+id/beaconAddress"
+      android:layout_toRightOf="@+id/beaconIcon"
+      android:layout_marginTop="-2dp" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="SN:"
+      android:id="@+id/SNText"
+      android:layout_alignBottom="@+id/beaconSerialNumber"
+      android:layout_marginRight="3dp"
+      android:visibility="visible"
+      android:layout_marginTop="-2dp"
+      android:layout_alignLeft="@+id/linearLayout" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="MAC:"
+      android:id="@+id/MACText"
+      android:layout_alignBottom="@+id/beaconAddress"
+      android:layout_toRightOf="@+id/beaconIcon"
+      android:layout_marginRight="3dp"
+      android:layout_alignStart="@id/linearLayout"
+      android:layout_marginTop="-2dp"
+      android:visibility="visible" />
+
+
+</RelativeLayout>

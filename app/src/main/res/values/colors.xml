@@ -1,0 +1,4 @@
+<resources>
+    <color name="embeacon_bg_teal">#62AEC1</color>
+    <color name="embeacon_bg_teal_dark">#5D9EAE</color>
+</resources>

@@ -1,0 +1,44 @@
+<resources>
+  <string name="app_name">EmBeaconLib</string>
+
+  <!-- Event strings -->
+
+  <string name="Alarm">Alarms</string>
+  <string name="ButtonPresses">Button Presses</string>
+  <string name="Buzzer">Buzzer Events</string>
+  <string name="Calibrations">Calibrations</string>
+  <string name="CloseMagnet">Near Events</string>
+  <string name="Fall">Falls</string>
+  <string name="FarMagnet">Far Events</string>
+  <string name="HighHumidity">High Events</string>
+  <string name="HighLight">Lights On</string>
+  <string name="HighPressure">High Events</string>
+  <string name="HighTemperature">High Events</string>
+  <string name="LowBattery">Low Events</string>
+  <string name="LowHumidity">Low Events</string>  
+  <string name="LowLight">Lights Off</string>
+  <string name="LowPressure">Low Events</string>
+  <string name="LowTemperature">Low Events</string>
+  <string name="Movement">Moves</string>
+  <string name="Tap">Taps</string>
+  <string name="Events">Events</string>  
+
+  <!-- Sensor strings -->
+  <string name="Blank">""</string>
+  <string name="DegreesC">"°C"</string>
+  <string name="DegreesF">"°F"</string>
+  <string name="Degrees_per_second">"°/sec"</string>
+  <string name="Gees">"g"</string>
+  <string name="mpsps">"m/sec²"</string>  
+  <string name="Lux">"Lux"</string>
+  <string name="Meters">"m"</string>
+  <string name="MicroTesla">"µT"</string>
+  <string name="Percent">"%"</string>
+  <string name="Unknown">"Unknown"</string>
+  <string name="VCOMOD">"VCO/Mod"</string>
+  <string name="Volts">"V"</string>
+  <string name="dBm">"dBm"</string>
+  <string name="hPa">"hPa"</string>
+  <string name="Packets">"Packets"</string>  
+  
+</resources>
